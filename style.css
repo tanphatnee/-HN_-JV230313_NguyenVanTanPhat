@@ -1,0 +1,49 @@
+form {
+    border: 1px solid #ccc;
+    padding: 20px;
+    width: 400px;
+    margin: 0 auto;
+  }
+  
+  form label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  
+  form input[type="text"],
+  form input[type="email"],
+  form input[type="tel"] {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    margin-bottom: 10px;
+    width: 95%;
+  }
+  
+  form input[type="radio"] {
+    margin-right: 5px;
+  }
+  
+  form button[type="submit"]:hover {
+    background-color: #006080;
+  }
+
+  .form-table{
+    border: 1px solid #ccc;
+    padding: 20px;
+    margin: 0 auto;
+    width: 1000px;
+    text-align: center;
+  }
+  
+  table {
+    border-collapse: collapse;
+    
+  }
+  
+  table td, table th {
+    border: 4px solid #ccc;
+    padding: 6px;
+  }
+  

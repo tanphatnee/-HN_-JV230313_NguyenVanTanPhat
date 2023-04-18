@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container">
+        <form id="main-form">
+            <h1>Thông tin học viên</h1>
+            <label for="Name">Họ và tên:</label>
+            <input type="text" id="fullName" name="fullName"  placeholder="vui lòng nhập tên">
+
+            <label for="Email">Email:</label>
+            <input type="email" id="Email" name="Email"  placeholder="vui lòng nhập email">
+
+            <label for="Phone">Số điện thoại:</label>
+            <input type="tel" id="Phone" name="Phone" 
+                placeholder="vui lòng nhập số điện thoại">
+
+            <label for="Address">Quê quán:</label>
+            <input type="text" id="Address" name="Address" 
+                placeholder="vui lòng nhập địa chỉ quê quán ">
+            <label>Giới tính:</label>
+            <label for="Gender">
+                <input type="radio" id="Gender" name="gender" value="male" > Nam
+            </label>
+            <label for="Gender">
+                <input type="radio" id="Gender" name="gender" value="female" > Nữ
+            </label>
+            <button type="submit" id="save-button" >Lưu lại</button>
+        </form>
+        <div class="form-table">
+            <h1>
+                Danh sách học viên
+            </h1>
+            <label for="input" id="search-input">Tìm kiếm học viên: <input type="text"></label>
+            <button id="search-button">search</button> <br><br>
+            <table>
+                <thead>
+                    <tr>
+                        <th>#</th>
+                        <th>Họ tên</th>
+                        <th>Email</th>
+                        <th>Điện thoại</th>
+                        <th>Địa chỉ</th>
+                        <th>Gender</th>
+                        <th>hành động</th>
+                        <th><button id="sort-btn">Sắp xếp(alpha b)</button></th>
+                    </tr>
+                </thead>
+                <tbody id="tbody">
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+
+</html>
